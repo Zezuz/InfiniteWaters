@@ -12,21 +12,24 @@ if not irandom(60){
 		
 		var enemies_to_spawn = floor(global.enemies_per_wave * wave_multiplier);
 		
+		
 		var enemy_type;
+		
+		
 		if global.wave <= 5 {
-			enemy_type = "obj_enemy_1";
+			enemy_type = obj_enemy_1;
 		} else {
-			enemy_type = global.enemy_types[irandom(array_length(global.enemy_types)- 1)];
+			enemy_type = global.enemy_types[| irandom(array_length(global.enemy_types) - 1)];
 		}
 		
 		for (var i = 0; i <enemies_to_spawn; i++) {
-			instance_create_depth(random(room_width), random(room_height), 0, enemy_types[i]);	
+			instance_create_depth(random(room_width), random(room_height), 0, enemy_type);	
 			enemy_ship_count += 1;
 		}
 	
 	}
 	
-	if enemy_ship_count >= global.enemies_per_wave {
+	if enemy_ship_count <= global.enemies_per_wave {
 		enemy_ship_count = 0;
 		global.wave += 1;
 	}

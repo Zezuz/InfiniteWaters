@@ -1,0 +1,20 @@
+1/5/24
+
+-Add Game Phases
+	-Active phase - round is active and ships are coming
+	-Non Active phase - Player ship has died and can purchase out of game bonuses towards Active phase
+	
+	
+-Waves?
+	-Wave functionality and increasing difficulty
+	-incremental health buffs for enemies and damage
+	
+-MORE SHIPS
+-MORE THINGS
+
+-Upgrades
+Canonball Damage - base 2 - CHECK
+Canonball Atk Spd - base 0.5
+2 canonballs?
+
+-Hp Bar for enemies

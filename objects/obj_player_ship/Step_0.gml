@@ -4,6 +4,8 @@
 time += 0.1
 upgrade_cost_dmg = 25 * (obj_player_ship.upgrade_level_dmg / 2);
 upgrade_cost_atk_spd = 25 * (obj_player_ship.upgrade_level_atk_spd / 2);
+upgrade_cost_health = 25 * (obj_player_ship.upgrade_level_health / 2);
+upgrade_cost_regen = 25 * (obj_player_ship.upgrade_level_regen / 2);
 
 if current_hp < max_hp {
 	regen_timer -= 1;

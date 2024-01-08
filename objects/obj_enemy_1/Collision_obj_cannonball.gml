@@ -5,6 +5,7 @@ current_hp -= obj_player_ship.ship_damage;
 
  with other {
  instance_destroy();
+ global.enemies_killed += 1;
  }
  
  if current_hp <= 0 {
@@ -12,8 +13,7 @@ current_hp -= obj_player_ship.ship_damage;
 	obj_player_ship.ship_confirmed_kills += 1;
 	obj_player_ship.gold += 1;
 	global.wave_kills += 1;
-	if ( obj_player_ship.ship_confirmed_kills % 10 == 0) {
-		global.wave += 1
-	}
+	global.enemies_killed += 1;
+	
  }
 

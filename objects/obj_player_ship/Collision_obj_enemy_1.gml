@@ -6,6 +6,7 @@ current_hp -= 1;
 
  with other {
  instance_destroy();
+ global.enemies_killed += 1;
  }
  
  if obj_player_ship.current_hp <= 0 {
